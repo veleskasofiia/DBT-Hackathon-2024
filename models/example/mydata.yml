@@ -1,0 +1,13 @@
+
+sources:
+  - name: my_source
+    database:
+    schema:
+    tables:
+    config:
+      enabled: true
+    tables:
+      - name: my_source_table  # enabled
+      - name: ignore_this_one  # not enabled
+        config:
+          enabled: false
